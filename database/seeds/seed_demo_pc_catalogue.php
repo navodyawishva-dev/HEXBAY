@@ -864,7 +864,7 @@ try {
             if (in_array($definition['data_type'], ['integer', 'decimal'], true)) {
                 $row['value_number'] = $value;
             } elseif ($definition['data_type'] === 'boolean') {
-                $row['value_boolean'] = (bool) $value;
+                $row['value_boolean'] = (int) (bool) $value;
             } elseif ($definition['data_type'] === 'option') {
                 $optionId = $options[$categorySlug][$code][(string) $value] ?? null;
                 if ($optionId === null) {

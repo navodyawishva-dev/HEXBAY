@@ -1238,7 +1238,7 @@ final class SellerModuleService
             ];
             match ($definition['data_type']) {
                 'integer', 'decimal' => $row['value_number'] = $value,
-                'boolean' => $row['value_boolean'] = filter_var(
+                'boolean' => $row['value_boolean'] = (int) filter_var(
                     $value,
                     FILTER_VALIDATE_BOOLEAN
                 ),

@@ -52,6 +52,7 @@ if not defined EXISTING_SECRET (
         echo FLASK_PORT=5000
         echo INTERNAL_SERVICE_SECRET=!AI_SECRET!
         echo LAPTOP_RECOMMENDER_ALGORITHM=laptop-content-v1.0.0
+        echo ALLOW_EXPERIMENTAL_PERIPHERALS=true
     ) > "%AI_ROOT%\.env"
 )
 

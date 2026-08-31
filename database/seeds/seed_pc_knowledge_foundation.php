@@ -350,7 +350,7 @@ try {
                 'category' => $categorySlug === null ? null : $categoryIds[$categorySlug],
                 'metric' => $metric, 'operator' => $operator,
                 'minimum' => $minimum, 'recommended' => $recommended,
-                'ideal' => $ideal, 'weight' => $weight, 'hard' => $hard,
+                'ideal' => $ideal, 'weight' => $weight, 'hard' => (int) $hard,
                 'rationale' => $rationale, 'sort_order' => ($index + 1) * 10,
             ]);
             $requirementCount++;

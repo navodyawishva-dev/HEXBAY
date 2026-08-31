@@ -43,6 +43,10 @@ final class AdminCatalogService
         string $ipAddress
     ): array {
         $data = AdminValidator::category($input);
+        // PDO execute arrays stringify false as an empty string; MySQL expects 0/1.
+        foreach (['is_active', 'requires_listing_approval'] as $field) {
+            $data[$field] = (int) $data[$field];
+        }
         if ($categoryId !== null && $data['parent_id'] === $categoryId) {
             throw new HttpException(422, 'A category cannot be its own parent.', [
                 'parent_id' => ['Choose another parent category.'],
@@ -165,6 +169,9 @@ final class AdminCatalogService
         string $ipAddress
     ): array {
         $data = AdminValidator::specification($input);
+        foreach (['is_required', 'is_filterable', 'is_compatibility_field', 'is_active'] as $field) {
+            $data[$field] = (int) $data[$field];
+        }
         $options = $data['options'];
         unset($data['options']);
         try {

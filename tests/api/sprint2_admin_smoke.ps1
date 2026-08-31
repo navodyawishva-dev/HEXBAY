@@ -25,7 +25,7 @@ $env:HEX_TEST_CATEGORY_SLUG = "smoke-category-$suffix"
 $env:HEX_TEST_SELLER_BRAND = $sellerBrandName
 $imageFixture = (Resolve-Path `
     "frontend\src\assets\brand\hexbay-logo-dark-v2.png").Path
-$invalidUploadFixture = (Resolve-Path "README.md").Path
+$invalidUploadFixture = (Resolve-Path "frontend\package.json").Path
 
 function Invoke-HexbayJson {
     param(
@@ -191,6 +191,18 @@ try {
     if ($specification.data.specification.options.Count -ne 2) {
         throw "Administrator specification options were not saved."
     }
+    Invoke-HexbayJson -Method POST `
+        -Path "/admin/categories/$categoryId/specifications" `
+        -Token $adminToken -Body @{
+            code = "test_boolean"
+            display_name = "Boolean storage regression"
+            data_type = "boolean"
+            is_required = $false
+            is_filterable = $false
+            is_compatibility_field = $false
+            is_active = $true
+            sort_order = 2
+        } | Out-Null
 
     $dashboard = Invoke-HexbayJson -Method GET -Path "/admin/dashboard" -Token $adminToken
     if ([int]$dashboard.data.counts.pending_shops -lt 1) {
@@ -379,9 +391,13 @@ try {
             initial_stock = 3
             specifications = @{
                 test_generation = $testOptionCode
+                test_boolean = $false
             }
         }
     $sellerListingId = [int]$sellerListing.data.listing.id
+    if ($sellerListing.data.listing.specifications.test_boolean -cne $false) {
+        throw "A false boolean product specification was not preserved."
+    }
     if ($sellerListing.data.listing.status -ne "pending_approval") {
         throw "Seller listing did not enter the required approval queue."
     }
