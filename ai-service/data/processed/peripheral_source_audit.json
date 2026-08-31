@@ -1,0 +1,172 @@
+{
+  "manifest_version": "1.0.0",
+  "generated_at": "2026-08-27T07:41:04.685976+00:00",
+  "reference_only_included": true,
+  "sources": [
+    {
+      "code": "open_icecat",
+      "trust_status": "approved_after_account_setup",
+      "downloaded": [],
+      "note": "Requires account credentials and a permitted product feed."
+    },
+    {
+      "code": "techfuel_pc_builder_v2_1",
+      "trust_status": "approved_reference",
+      "downloaded": [
+        {
+          "path": "E:/ICBT/TOP-UP/HEXBAY - Final Project/Hexbay/ai-service/data/raw/peripheral-step1/techfuel/pc-builder-parts.json",
+          "bytes": 90253,
+          "sha256": "49f9259e7515307cbcc99ace5b0e8ad07389a511eb9f79142fbd7d7a3d467706",
+          "format": "json",
+          "top_level_keys": [
+            "_meta",
+            "performance_tiers",
+            "cpu",
+            "gpu",
+            "motherboard",
+            "ram",
+            "storage",
+            "psu",
+            "case"
+          ],
+          "collection_counts": {
+            "cpu": 30,
+            "gpu": 25,
+            "motherboard": 16,
+            "ram": 13,
+            "storage": 15,
+            "psu": 12,
+            "case": 15
+          },
+          "url": "https://techfuelhq.com/data/pc-builder-parts.json"
+        }
+      ]
+    },
+    {
+      "code": "docyx_pc_part_dataset_2025_07_23",
+      "trust_status": "reference_only_needs_verification",
+      "downloaded": [
+        {
+          "path": "E:/ICBT/TOP-UP/HEXBAY - Final Project/Hexbay/ai-service/data/raw/peripheral-step1/reference-only/docyx/monitor.csv",
+          "bytes": 242372,
+          "sha256": "5b06db567f6496de5ba2214523c9b518edaca093bab02856442a49ce472d91f5",
+          "format": "csv",
+          "rows": 5074,
+          "columns": [
+            "name",
+            "price",
+            "screen_size",
+            "resolution",
+            "refresh_rate",
+            "response_time",
+            "panel_type",
+            "aspect_ratio"
+          ],
+          "exact_duplicate_rows": 107,
+          "missing_values": {
+            "name": 0,
+            "price": 3707,
+            "screen_size": 0,
+            "resolution": 0,
+            "refresh_rate": 866,
+            "response_time": 884,
+            "panel_type": 780,
+            "aspect_ratio": 0
+          },
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/monitor.csv"
+        },
+        {
+          "path": "E:/ICBT/TOP-UP/HEXBAY - Final Project/Hexbay/ai-service/data/raw/peripheral-step1/reference-only/docyx/keyboard.csv",
+          "bytes": 314998,
+          "sha256": "d0b4330d41bae1b28c393847cf31e816e7c96765d829d0e758297c6853eb8050",
+          "format": "csv",
+          "rows": 4310,
+          "columns": [
+            "name",
+            "price",
+            "style",
+            "switches",
+            "backlit",
+            "tenkeyless",
+            "connection_type",
+            "color"
+          ],
+          "exact_duplicate_rows": 489,
+          "missing_values": {
+            "name": 0,
+            "price": 3486,
+            "style": 0,
+            "switches": 1513,
+            "backlit": 1703,
+            "tenkeyless": 0,
+            "connection_type": 8,
+            "color": 23
+          },
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/keyboard.csv"
+        },
+        {
+          "path": "E:/ICBT/TOP-UP/HEXBAY - Final Project/Hexbay/ai-service/data/raw/peripheral-step1/reference-only/docyx/mouse.csv",
+          "bytes": 167241,
+          "sha256": "2c85b3762300b3aff6fd4804c8dc87001595e3777b04f77ca82127ae8d534071",
+          "format": "csv",
+          "rows": 2806,
+          "columns": [
+            "name",
+            "price",
+            "tracking_method",
+            "connection_type",
+            "max_dpi",
+            "hand_orientation",
+            "color"
+          ],
+          "exact_duplicate_rows": 40,
+          "missing_values": {
+            "name": 0,
+            "price": 1961,
+            "tracking_method": 0,
+            "connection_type": 6,
+            "max_dpi": 616,
+            "hand_orientation": 129,
+            "color": 6
+          },
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/mouse.csv"
+        },
+        {
+          "path": "E:/ICBT/TOP-UP/HEXBAY - Final Project/Hexbay/ai-service/data/raw/peripheral-step1/reference-only/docyx/headphones.csv",
+          "bytes": 200568,
+          "sha256": "0c1e574a7cc0dfcc17f1939523635269cf419846ad24320cb4f8df20e7f225c6",
+          "format": "csv",
+          "rows": 2946,
+          "columns": [
+            "name",
+            "price",
+            "type",
+            "frequency_response",
+            "microphone",
+            "wireless",
+            "enclosure_type",
+            "color"
+          ],
+          "exact_duplicate_rows": 37,
+          "missing_values": {
+            "name": 0,
+            "price": 2282,
+            "type": 0,
+            "frequency_response": 625,
+            "microphone": 0,
+            "wireless": 0,
+            "enclosure_type": 0,
+            "color": 14
+          },
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/headphones.csv"
+        }
+      ]
+    },
+    {
+      "code": "hexbay_approved_seller_feeds",
+      "trust_status": "required_production_authority",
+      "downloaded": [],
+      "note": "Seller-managed database authority; no public download exists."
+    }
+  ]
+}

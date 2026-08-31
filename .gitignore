@@ -1,0 +1,54 @@
+# Private local configuration; safe templates remain available
+.env
+.env.*
+!.env.example
+*.local.php
+*.pem
+*.key
+
+# Reinstallable dependencies and generated builds
+node_modules/
+.venv/
+venv/
+vendor/
+/frontend/dist*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vite/
+coverage/
+
+# Raw third-party downloads are not required by the trained application.
+# Keep source manifests, processed datasets, evaluations and trained models.
+/ai-service/data/raw/*
+!/ai-service/data/raw/.gitkeep
+
+# Exclude private verification documents, but keep the storage directory.
+# Product images and shop logos are intentionally included.
+/backend/storage/protected-verification/*
+!/backend/storage/protected-verification/.gitkeep
+
+# Local database exports and backup copies
+/database/backups/
+*.dump
+*.bak
+*.sql.gz
+
+# Local development, reporting and packaging output
+/.agents/
+/.tmp/
+/tmp/
+/artifacts/
+/output/
+.idea/
+.vscode/
+*.log
+*.rar
+*.zip
+*.7z
+.DS_Store
+Thumbs.db
+
+# README files are intentionally omitted from this submission.
+[Rr][Ee][Aa][Dd][Mm][Ee]*
+[Rr][Ee][Aa][Dd].[Mm][Ee]*

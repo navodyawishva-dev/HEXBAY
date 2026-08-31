@@ -1,0 +1,99 @@
+{
+  "algorithm_version": "laptop-content-v1.0.0",
+  "evaluation_candidates": 500,
+  "generated_at_utc": "2026-07-31T09:47:20+00:00",
+  "hard_constraint_violation_count": 0,
+  "limitations": [
+    "The Kaggle data has no user relevance labels.",
+    "This report does not measure accuracy, precision, recall, or satisfaction.",
+    "Live recommendations must use eligible MySQL marketplace candidates."
+  ],
+  "reference_price_handling": {
+    "scale_multiplier": 100.0,
+    "warning": "Evaluation-only monotonic scaling; not an exchange-rate conversion and not a current LKR market price."
+  },
+  "repeatable_scenarios": 4,
+  "scenario_count": 4,
+  "scenarios": [
+    {
+      "eligible_candidates": 90,
+      "filter_summary": {
+        "insufficient_ram": 163,
+        "insufficient_storage": 54,
+        "over_budget": 250
+      },
+      "hard_constraint_violations": [],
+      "name": "general_mid_budget",
+      "repeatable": true,
+      "returned_product_ids": [
+        26,
+        388,
+        152,
+        11,
+        279
+      ],
+      "returned_recommendations": 5
+    },
+    {
+      "eligible_candidates": 26,
+      "filter_summary": {
+        "dedicated_gpu_required": 345,
+        "insufficient_ram": 416,
+        "insufficient_storage": 282,
+        "over_budget": 50
+      },
+      "hard_constraint_violations": [],
+      "name": "gaming_high_budget",
+      "repeatable": true,
+      "returned_product_ids": [
+        129,
+        359,
+        66,
+        360,
+        130
+      ],
+      "returned_recommendations": 5
+    },
+    {
+      "eligible_candidates": 25,
+      "filter_summary": {
+        "insufficient_ram": 163,
+        "insufficient_storage": 25,
+        "over_budget": 225,
+        "screen_above_maximum": 324
+      },
+      "hard_constraint_violations": [],
+      "name": "portable_study",
+      "repeatable": true,
+      "returned_product_ids": [
+        26,
+        104,
+        3,
+        115,
+        119
+      ],
+      "returned_recommendations": 5
+    },
+    {
+      "eligible_candidates": 18,
+      "filter_summary": {
+        "insufficient_ram": 416,
+        "insufficient_storage": 282,
+        "over_budget": 123
+      },
+      "hard_constraint_violations": [],
+      "name": "programming",
+      "repeatable": true,
+      "returned_product_ids": [
+        129,
+        196,
+        359,
+        309,
+        360
+      ],
+      "returned_recommendations": 5
+    }
+  ],
+  "scenarios_with_results": 4,
+  "source_records": 1228
+}

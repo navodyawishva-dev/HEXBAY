@@ -1,0 +1,182 @@
+{
+  "manifest_version": "1.0.0",
+  "reviewed_at": "2026-08-27",
+  "scope": {
+    "default_setup": [
+      "monitor",
+      "keyboard",
+      "mouse"
+    ],
+    "optional_add_ons": [
+      "headset"
+    ],
+    "target_canonical_product_counts": {
+      "monitor": 25,
+      "keyboard": 20,
+      "mouse": 20,
+      "headset": 15
+    }
+  },
+  "authority_boundary": {
+    "canonical_identity_and_specs": "Use licensed external product content only after field-level validation.",
+    "seller_price_stock_warranty": "Use approved HEXBAY shop listings only. External prices are never treated as live LKR offers.",
+    "recommendation_eligibility": "Only verified canonical products with an active in-stock HEXBAY listing may be recommended."
+  },
+  "sources": [
+    {
+      "code": "open_icecat",
+      "name": "Open Icecat",
+      "homepage": "https://icecat.com/content-subscription/",
+      "role": "preferred_peripheral_specification_source",
+      "trust_status": "approved_after_account_setup",
+      "licence": "Open Icecat open content licence; respect per-brand syndication and digital-asset rights.",
+      "coverage": [
+        "monitor",
+        "keyboard",
+        "mouse",
+        "headset"
+      ],
+      "access": "Free registration is required. Match products by brand plus manufacturer part number or GTIN and request only Open Icecat-authorized content.",
+      "limitations": [
+        "Coverage is limited to participating Open Icecat brands.",
+        "Some rich media assets have separate access restrictions.",
+        "Does not provide authoritative HEXBAY seller price or stock."
+      ],
+      "downloads": []
+    },
+    {
+      "code": "techfuel_pc_builder_v2_1",
+      "name": "TechFuelHQ PC Builder Parts Dataset",
+      "homepage": "https://techfuelhq.com/data/pc-part-prices-2026/",
+      "role": "core_component_compatibility_supplement",
+      "trust_status": "approved_reference",
+      "licence": "CC BY 4.0; attribution required.",
+      "attribution": "TechFuelHQ PC Builder Parts Dataset (CC BY 4.0). https://techfuelhq.com/tools/pc-builder/",
+      "coverage": [
+        "processor",
+        "graphics_card",
+        "motherboard",
+        "memory",
+        "storage",
+        "power_supply",
+        "computer_case"
+      ],
+      "limitations": [
+        "Does not contain monitors, keyboards, mice, or headsets.",
+        "Contains no current prices and must not be used as a seller feed.",
+        "Performance tiers are editorial rather than a substitute for benchmark evidence."
+      ],
+      "downloads": [
+        {
+          "url": "https://techfuelhq.com/data/pc-builder-parts.json",
+          "path": "techfuel/pc-builder-parts.json",
+          "format": "json",
+          "observed_sha256": "49f9259e7515307cbcc99ace5b0e8ad07389a511eb9f79142fbd7d7a3d467706"
+        }
+      ]
+    },
+    {
+      "code": "docyx_pc_part_dataset_2025_07_23",
+      "name": "docyx PC Part Dataset",
+      "homepage": "https://github.com/docyx/pc-part-dataset",
+      "role": "peripheral_candidate_discovery_only",
+      "trust_status": "reference_only_needs_verification",
+      "licence": "Repository declares MIT; underlying records were scraped from PCPartPicker, so the repository licence alone is not accepted as proof of rights over upstream product data.",
+      "coverage": [
+        "monitor",
+        "keyboard",
+        "mouse",
+        "headset"
+      ],
+      "limitations": [
+        "Never import its USD prices into HEXBAY.",
+        "Never use an unverified row as recommendation evidence.",
+        "Verify identity and required specifications against Open Icecat or manufacturer pages.",
+        "Dataset was last reported updated on 2025-07-23 and may contain discontinued products."
+      ],
+      "audited_snapshot": {
+        "audited_at": "2026-08-27",
+        "monitor": {
+          "rows": 5074,
+          "exact_duplicate_rows": 107,
+          "missing_price_percent": 73.1,
+          "observed_sha256": "5b06db567f6496de5ba2214523c9b518edaca093bab02856442a49ce472d91f5"
+        },
+        "keyboard": {
+          "rows": 4310,
+          "exact_duplicate_rows": 489,
+          "missing_price_percent": 80.9,
+          "observed_sha256": "d0b4330d41bae1b28c393847cf31e816e7c96765d829d0e758297c6853eb8050"
+        },
+        "mouse": {
+          "rows": 2806,
+          "exact_duplicate_rows": 40,
+          "missing_price_percent": 69.9,
+          "observed_sha256": "2c85b3762300b3aff6fd4804c8dc87001595e3777b04f77ca82127ae8d534071"
+        },
+        "headset": {
+          "rows": 2946,
+          "exact_duplicate_rows": 37,
+          "missing_price_percent": 77.5,
+          "observed_sha256": "0c1e574a7cc0dfcc17f1939523635269cf419846ad24320cb4f8df20e7f225c6"
+        }
+      },
+      "downloads": [
+        {
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/monitor.csv",
+          "path": "reference-only/docyx/monitor.csv",
+          "format": "csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/keyboard.csv",
+          "path": "reference-only/docyx/keyboard.csv",
+          "format": "csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/mouse.csv",
+          "path": "reference-only/docyx/mouse.csv",
+          "format": "csv"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/docyx/pc-part-dataset/main/data/csv/headphones.csv",
+          "path": "reference-only/docyx/headphones.csv",
+          "format": "csv"
+        }
+      ]
+    },
+    {
+      "code": "hexbay_approved_seller_feeds",
+      "name": "HEXBAY approved seller listings",
+      "homepage": null,
+      "role": "authoritative_offer_source",
+      "trust_status": "required_production_authority",
+      "licence": "Seller-supplied marketplace records governed by HEXBAY terms.",
+      "coverage": [
+        "lkr_price",
+        "stock",
+        "condition",
+        "warranty",
+        "seller_identity"
+      ],
+      "limitations": [
+        "A seller offer must map to one reviewed canonical product.",
+        "Synthetic demonstration offers must be labelled as fictional data."
+      ],
+      "downloads": []
+    }
+  ],
+  "rejected_as_primary_sources": [
+    {
+      "source": "Generic Kaggle marketplace datasets",
+      "reason": "Usually stale, region-specific, weakly structured, and not authoritative for compatibility or Sri Lankan stock."
+    },
+    {
+      "source": "Foreign retailer APIs such as Best Buy or eBay",
+      "reason": "Useful for discovery but not authoritative for local HEXBAY seller inventory, warranty, or LKR price."
+    },
+    {
+      "source": "Unlicensed web scraping",
+      "reason": "Unclear rights, fragile fields, and unacceptable provenance for a real-world marketplace recommender."
+    }
+  ]
+}

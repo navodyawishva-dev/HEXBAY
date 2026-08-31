@@ -1,0 +1,360 @@
+{
+  "decisions": {
+    "compatibility_authority": "validated_deterministic_rules",
+    "cpu_gpu_stats": "accepted_with_incomplete_records_flagged",
+    "gpu_benchmarks": "supplementary_only",
+    "laptops": "accepted_for_content_based_experiments",
+    "marketplace_authority": "mysql",
+    "pc_components": "reference_only_manual_review_required"
+  },
+  "generated_at_utc": "2026-07-31T09:47:09+00:00",
+  "pipeline_version": "1.0.0",
+  "processed_directory": "E:\\ICBT\\TOP-UP\\HEXBAY - Final Project\\Hexbay\\ai-service\\data\\processed",
+  "processed_outputs": {
+    "cpus_clean.csv": {
+      "bytes": 425212,
+      "columns": 21,
+      "rows": 2538,
+      "sha256": "71452f9b8ef59758e04aaf7882f14b1e4f022ab8759e0cebef58553f6efd6d76"
+    },
+    "gpu_benchmarks_clean.csv": {
+      "bytes": 417009,
+      "columns": 11,
+      "rows": 2714,
+      "sha256": "10655971bbf9701b484ee5129b93361b9e51a47fa0b0eb1dfb9570e2beeaf609"
+    },
+    "gpus_clean.csv": {
+      "bytes": 461257,
+      "columns": 19,
+      "rows": 2333,
+      "sha256": "3eeebf579c8a6485b8de63d85472cbed8635de0353e0a5d6ec9ae7b1ffda062f"
+    },
+    "laptops_clean.csv": {
+      "bytes": 251652,
+      "columns": 24,
+      "rows": 1228,
+      "sha256": "a97f39f795ecfafe1f50891f241a605b331d731c2acbf3343298e633c8cf6d55"
+    },
+    "pc_components_clean.csv": {
+      "bytes": 406507,
+      "columns": 11,
+      "rows": 2119,
+      "sha256": "51b26d8b72f4d60b46158cf37c94e338ab35d0b8e3fcb053747fe404c9782864"
+    }
+  },
+  "raw_directory": "E:\\ICBT\\TOP-UP\\HEXBAY - Final Project\\Hexbay\\ai-service\\data\\raw",
+  "raw_files": [
+    {
+      "bytes": 207757,
+      "column_count": 10,
+      "columns": [
+        "Unnamed: 0",
+        "Name",
+        "Codename",
+        "Cores",
+        "Clock",
+        "Socket",
+        "Process",
+        "L3_Cache",
+        "TDP",
+        "Release"
+      ],
+      "exact_duplicate_rows": 1,
+      "missing_values": {
+        "Clock": 383,
+        "Codename": 383,
+        "Cores": 383,
+        "L3_Cache": 1424,
+        "Name": 0,
+        "Process": 383,
+        "Release": 383,
+        "Socket": 383,
+        "TDP": 383,
+        "Unnamed: 0": 0
+      },
+      "path": "cpu-gpu-stats/tpu_cpus.csv",
+      "rows": 2614,
+      "sha256": "5117f1d13bedb7499cefc8b5cc0157a9a59cc505fa4ae51ebc649c68a7d1d3a0"
+    },
+    {
+      "bytes": 393656,
+      "column_count": 9,
+      "columns": [
+        "Unnamed: 0",
+        "Product_Name",
+        "GPU_Chip",
+        "Released",
+        "Bus",
+        "Memory",
+        "GPU_clock",
+        "Memory_clock",
+        "Shaders_TMUs_ROPs"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "Bus": 38,
+        "GPU_Chip": 38,
+        "GPU_clock": 38,
+        "Memory": 38,
+        "Memory_clock": 38,
+        "Product_Name": 0,
+        "Released": 38,
+        "Shaders_TMUs_ROPs": 38,
+        "Unnamed: 0": 0
+      },
+      "path": "cpu-gpu-stats/tpu_gpus.csv",
+      "rows": 3584,
+      "sha256": "0c759119927df0dc70326f91a663a365f7ed5d615f8bd3da46c5c61b84a06498"
+    },
+    {
+      "bytes": 53731,
+      "column_count": 4,
+      "columns": [
+        "Device",
+        "OpenCL",
+        "Metal",
+        "Vulkan"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "Device": 0,
+        "Metal": 1393,
+        "OpenCL": 0,
+        "Vulkan": 864
+      },
+      "path": "gpu-benchmarks-supplementary/GPU_scores_graphics_API_v2_noCUDA.csv",
+      "rows": 1501,
+      "sha256": "4f0243aa54853616392a45f473d38bcadfcf3acf74ff3060a9a016667d963790"
+    },
+    {
+      "bytes": 43403,
+      "column_count": 6,
+      "columns": [
+        "Manufacturer",
+        "Device",
+        "CUDA",
+        "Metal",
+        "OpenCL",
+        "Vulkan"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "CUDA": 947,
+        "Device": 0,
+        "Manufacturer": 0,
+        "Metal": 972,
+        "OpenCL": 237,
+        "Vulkan": 584
+      },
+      "path": "gpu-benchmarks-supplementary/GPU_scores_graphicsAPIs.csv",
+      "rows": 1213,
+      "sha256": "d087293c77a41c82df8cde78fb07611146da047bf318a547456141f24b5b918e"
+    },
+    {
+      "bytes": 129085,
+      "column_count": 16,
+      "columns": [
+        "Company",
+        "TypeName",
+        "Screen_Size",
+        "Resolution",
+        "Touchscreen",
+        "IPS",
+        "CPU",
+        "Clock_Speed",
+        "RAM",
+        "GPU",
+        "HDD",
+        "SSD",
+        "Flash_Storage",
+        "OpSys",
+        "Weight",
+        "Price"
+      ],
+      "exact_duplicate_rows": 28,
+      "missing_values": {
+        "CPU": 0,
+        "Clock_Speed": 0,
+        "Company": 0,
+        "Flash_Storage": 0,
+        "GPU": 0,
+        "HDD": 0,
+        "IPS": 0,
+        "OpSys": 0,
+        "Price": 0,
+        "RAM": 0,
+        "Resolution": 0,
+        "SSD": 0,
+        "Screen_Size": 0,
+        "Touchscreen": 0,
+        "TypeName": 0,
+        "Weight": 0
+      },
+      "path": "laptop-prices/laptop.csv",
+      "rows": 1257,
+      "sha256": "058ee762309405d1508c1b519fc3d55d4ba38dd258137077cdc41db0435a8b20"
+    },
+    {
+      "bytes": 46752,
+      "column_count": 4,
+      "columns": [
+        "Unnamed: 0",
+        "CPU",
+        "MRP",
+        "is_amd"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "CPU": 0,
+        "MRP": 0,
+        "Unnamed: 0": 0,
+        "is_amd": 0
+      },
+      "path": "pc-components/amd_cpus.csv",
+      "rows": 373,
+      "sha256": "fc42687c95a6be35073aaa0de2ba634bd0719c035c2e7e7d4b808b4a8a91b9bc"
+    },
+    {
+      "bytes": 1850,
+      "column_count": 4,
+      "columns": [
+        "Unnamed: 0",
+        "CPU",
+        "MRP",
+        "is_intel"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "CPU": 0,
+        "MRP": 0,
+        "Unnamed: 0": 0,
+        "is_intel": 0
+      },
+      "path": "pc-components/intel_cpus.csv",
+      "rows": 18,
+      "sha256": "6880dd09345826185c7dc6569c45fa67fbee5bc774aa83844c3a38851c22e385"
+    },
+    {
+      "bytes": 370804,
+      "column_count": 2,
+      "columns": [
+        "cabinates",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 2739,
+      "missing_values": {
+        "MRP": 0,
+        "cabinates": 0
+      },
+      "path": "pc-components/PcData/cabinates.csv",
+      "rows": 3120,
+      "sha256": "c8b8efa96d271a6d3cbf53c01ebe9f29da829ecda0fb23de156cb48b767eecd5"
+    },
+    {
+      "bytes": 148007,
+      "column_count": 3,
+      "columns": [
+        "Unnamed: 0",
+        "CPU",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "CPU": 0,
+        "MRP": 0,
+        "Unnamed: 0": 0
+      },
+      "path": "pc-components/PcData/CPU.csv",
+      "rows": 1440,
+      "sha256": "ca8059135a5a900c0f36deeb8e3282a3e767fbb3a2f7a712dfa3d4d11062929f"
+    },
+    {
+      "bytes": 53095,
+      "column_count": 3,
+      "columns": [
+        "Unnamed: 0",
+        "GPU",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "GPU": 0,
+        "MRP": 0,
+        "Unnamed: 0": 0
+      },
+      "path": "pc-components/PcData/GPU.csv",
+      "rows": 600,
+      "sha256": "34fd2516e35362b64aa438b223a9bff2bd229a05d399a0e9c9e804e2139231b2"
+    },
+    {
+      "bytes": 89107,
+      "column_count": 3,
+      "columns": [
+        "Unnamed: 0",
+        "motherBoard",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "MRP": 0,
+        "Unnamed: 0": 0,
+        "motherBoard": 0
+      },
+      "path": "pc-components/PcData/MotherBoard.csv",
+      "rows": 1440,
+      "sha256": "a481b0447b06db9de88367edd04dd9566baf67097889a126983acf7f5a3ff364"
+    },
+    {
+      "bytes": 93895,
+      "column_count": 2,
+      "columns": [
+        "PowerSupply",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 858,
+      "missing_values": {
+        "MRP": 0,
+        "PowerSupply": 0
+      },
+      "path": "pc-components/PcData/PowerSupply.csv",
+      "rows": 1120,
+      "sha256": "a009fcc9e9fcb0fb59d1f29dc070d8e3bec48afccb1a64666dee0a23a2def020"
+    },
+    {
+      "bytes": 130153,
+      "column_count": 3,
+      "columns": [
+        "Unnamed: 0",
+        "Ram",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "MRP": 3,
+        "Ram": 0,
+        "Unnamed: 0": 0
+      },
+      "path": "pc-components/PcData/RAM.csv",
+      "rows": 1440,
+      "sha256": "6e75e761a77dfe21e98e8ea31b5e20348632c83c18eab827707826dac1aeda6b"
+    },
+    {
+      "bytes": 316300,
+      "column_count": 3,
+      "columns": [
+        "Unnamed: 0",
+        "SSD",
+        "MRP"
+      ],
+      "exact_duplicate_rows": 0,
+      "missing_values": {
+        "MRP": 0,
+        "SSD": 0,
+        "Unnamed: 0": 0
+      },
+      "path": "pc-components/PcData/StorageSSD.csv",
+      "rows": 2640,
+      "sha256": "c8340d92c85731edd0b5aeb2f12f2fb0d34a4f8c7481b6bcf04be1ad398c42a3"
+    }
+  ]
+}

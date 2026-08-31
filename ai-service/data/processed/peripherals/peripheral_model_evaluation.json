@@ -1,0 +1,234 @@
+{
+  "algorithm_version": "peripheral-hybrid-v1.0.0",
+  "generated_at_utc": "2026-08-27T10:46:19+00:00",
+  "production_ready": false,
+  "training_authority": "reference_only_weak_labels",
+  "categories": {
+    "monitor": {
+      "source_rows": 4786,
+      "training_rows": 3828,
+      "holdout_rows": 958,
+      "weak_label_accuracy": 0.9791,
+      "weak_label_macro_f1": 0.9721,
+      "five_fold_weak_accuracy_mean": 0.9743,
+      "five_fold_weak_accuracy_std": 0.0056,
+      "five_fold_weak_macro_f1_mean": 0.9658,
+      "five_fold_weak_macro_f1_std": 0.0076,
+      "mean_weak_precision_at_5": 1.0,
+      "mean_weak_ndcg_at_5": 1.0,
+      "repeatable_scenarios": 5,
+      "scenario_count": 5,
+      "production_gate_passed": true,
+      "profiles": [
+        {
+          "profile": "general",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "productivity",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "visual_creative",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "gaming",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "competitive_gaming",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        }
+      ],
+      "artifact": "monitor_peripheral-hybrid-v1.0.0.joblib",
+      "artifact_bytes": 59928,
+      "artifact_sha256": "d82881af035ce7d7b3b66c7a24cb8fc56ef056aa8ea70d7ae543c4718d4a070c",
+      "artifact_reload_passed": true
+    },
+    "keyboard": {
+      "source_rows": 2345,
+      "training_rows": 1876,
+      "holdout_rows": 469,
+      "weak_label_accuracy": 0.9915,
+      "weak_label_macro_f1": 0.9937,
+      "five_fold_weak_accuracy_mean": 0.9787,
+      "five_fold_weak_accuracy_std": 0.0043,
+      "five_fold_weak_macro_f1_mean": 0.9843,
+      "five_fold_weak_macro_f1_std": 0.0032,
+      "mean_weak_precision_at_5": 1.0,
+      "mean_weak_ndcg_at_5": 1.0,
+      "repeatable_scenarios": 4,
+      "scenario_count": 4,
+      "production_gate_passed": true,
+      "profiles": [
+        {
+          "profile": "productivity",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "portable",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "ergonomic",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "gaming",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        }
+      ],
+      "artifact": "keyboard_peripheral-hybrid-v1.0.0.joblib",
+      "artifact_bytes": 97913,
+      "artifact_sha256": "bfbd94eb63e532d031d9019c793a2c65cad9207329e40ea5b7f92b6b74d5b664",
+      "artifact_reload_passed": true
+    },
+    "mouse": {
+      "source_rows": 2097,
+      "training_rows": 1677,
+      "holdout_rows": 420,
+      "weak_label_accuracy": 0.9857,
+      "weak_label_macro_f1": 0.9814,
+      "five_fold_weak_accuracy_mean": 0.9876,
+      "five_fold_weak_accuracy_std": 0.0023,
+      "five_fold_weak_macro_f1_mean": 0.9848,
+      "five_fold_weak_macro_f1_std": 0.0024,
+      "mean_weak_precision_at_5": 1.0,
+      "mean_weak_ndcg_at_5": 1.0,
+      "repeatable_scenarios": 4,
+      "scenario_count": 4,
+      "production_gate_passed": true,
+      "profiles": [
+        {
+          "profile": "productivity",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "portable",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "accessibility",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "gaming",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        }
+      ],
+      "artifact": "mouse_peripheral-hybrid-v1.0.0.joblib",
+      "artifact_bytes": 61732,
+      "artifact_sha256": "d1f45cabaa51a94cc594965dfd6dd01bc7b28e196823deef5cb3ba47a95d917a",
+      "artifact_reload_passed": true
+    },
+    "headset": {
+      "source_rows": 2510,
+      "training_rows": 2008,
+      "holdout_rows": 502,
+      "weak_label_accuracy": 0.9821,
+      "weak_label_macro_f1": 0.8525,
+      "five_fold_weak_accuracy_mean": 0.9873,
+      "five_fold_weak_accuracy_std": 0.0024,
+      "five_fold_weak_macro_f1_mean": 0.9171,
+      "five_fold_weak_macro_f1_std": 0.038,
+      "mean_weak_precision_at_5": 1.0,
+      "mean_weak_ndcg_at_5": 1.0,
+      "repeatable_scenarios": 4,
+      "scenario_count": 4,
+      "production_gate_passed": true,
+      "profiles": [
+        {
+          "profile": "communication",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "music_creation",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "portable",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        },
+        {
+          "profile": "gaming",
+          "weak_precision_at_5": 1.0,
+          "weak_ndcg_at_5": 1.0,
+          "repeatable": true,
+          "returned": 5
+        }
+      ],
+      "artifact": "headset_peripheral-hybrid-v1.0.0.joblib",
+      "artifact_bytes": 61551,
+      "artifact_sha256": "0748338ad8e7e3029f589e1d6cb2cef374bfb2378837e3fd0e4f35a91df8e705",
+      "artifact_reload_passed": true
+    }
+  },
+  "overall": {
+    "source_rows": 11738,
+    "mean_weak_label_accuracy": 0.9846,
+    "mean_weak_label_macro_f1": 0.9499,
+    "mean_five_fold_weak_accuracy": 0.982,
+    "mean_five_fold_weak_macro_f1": 0.963,
+    "mean_weak_precision_at_5": 1.0,
+    "mean_weak_ndcg_at_5": 1.0,
+    "all_scenarios_repeatable": true,
+    "all_production_gates_passed": true,
+    "all_artifacts_reload_passed": true
+  },
+  "limitations": [
+    "Purpose labels are deterministic weak labels, not customer relevance judgements.",
+    "Accuracy and ranking metrics measure agreement with those weak labels only.",
+    "All source products remain unverified and are blocked in production mode.",
+    "Price, stock, warranty, delivery, and seller trust are intentionally absent from model training.",
+    "Joblib artifacts must be loaded only from trusted local builds and checked against their recorded SHA-256 hashes."
+  ]
+}

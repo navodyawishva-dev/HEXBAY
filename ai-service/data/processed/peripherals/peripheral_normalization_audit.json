@@ -1,0 +1,83 @@
+{
+  "pipeline_version": "1.0.0",
+  "source_code": "docyx_pc_part_dataset_2025_07_23",
+  "source_trust_status": "reference_only_needs_verification",
+  "recommendation_eligibility_policy": "All Step 2 rows remain needs_review and recommendation_eligible=false.",
+  "categories": {
+    "monitor": {
+      "raw_rows": 5074,
+      "exact_duplicate_rows": 107,
+      "rejected_rows": 0,
+      "normalized_canonical_candidates": 4786,
+      "identity_duplicates_collapsed": 288,
+      "recommendation_eligible_rows": 0,
+      "average_completeness_score": 95.42,
+      "shortlist_needs_verification": 25,
+      "shortlist_profile_counts": {
+        "general": 5,
+        "productivity": 5,
+        "visual_creative": 5,
+        "gaming": 5,
+        "competitive_gaming": 5
+      },
+      "output": "monitor_candidates_clean.csv"
+    },
+    "keyboard": {
+      "raw_rows": 4310,
+      "exact_duplicate_rows": 489,
+      "rejected_rows": 0,
+      "normalized_canonical_candidates": 2345,
+      "identity_duplicates_collapsed": 1965,
+      "recommendation_eligible_rows": 0,
+      "average_completeness_score": 87.55,
+      "shortlist_needs_verification": 20,
+      "shortlist_profile_counts": {
+        "portable": 7,
+        "gaming": 7,
+        "productivity": 4,
+        "ergonomic": 2
+      },
+      "output": "keyboard_candidates_clean.csv"
+    },
+    "mouse": {
+      "raw_rows": 2806,
+      "exact_duplicate_rows": 40,
+      "rejected_rows": 0,
+      "normalized_canonical_candidates": 2097,
+      "identity_duplicates_collapsed": 709,
+      "recommendation_eligible_rows": 0,
+      "average_completeness_score": 95.32,
+      "shortlist_needs_verification": 20,
+      "shortlist_profile_counts": {
+        "productivity": 6,
+        "accessibility": 5,
+        "gaming": 5,
+        "portable": 4
+      },
+      "output": "mouse_candidates_clean.csv"
+    },
+    "headset": {
+      "raw_rows": 2946,
+      "exact_duplicate_rows": 37,
+      "rejected_rows": 0,
+      "normalized_canonical_candidates": 2510,
+      "identity_duplicates_collapsed": 436,
+      "recommendation_eligible_rows": 0,
+      "average_completeness_score": 100.0,
+      "shortlist_needs_verification": 15,
+      "shortlist_profile_counts": {
+        "communication": 5,
+        "music_creation": 5,
+        "gaming": 5
+      },
+      "output": "headset_candidates_clean.csv"
+    }
+  },
+  "totals": {
+    "raw_rows": 15136,
+    "normalized_canonical_candidates": 11738,
+    "rejected_rows": 0,
+    "shortlist_needs_verification": 80,
+    "recommendation_eligible_rows": 0
+  }
+}

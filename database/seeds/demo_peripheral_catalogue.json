@@ -1,0 +1,60 @@
+{
+  "catalogue_notice": "Fictional local demonstration records and simulated LKR prices. Never present these as verified market facts.",
+  "products": [
+    {
+      "brand": "HexView", "brand_slug": "hexview-demo", "name": "HexView Focus 24 Monitor", "model": "Focus-24-FHD-Demo", "sku": "HV24F",
+      "specs": {"accessory_type": "monitor", "connectivity": ["wired"], "screen_size_inches": 24, "resolution_width_pixels": 1920, "resolution_height_pixels": 1080, "refresh_rate_hz": 100, "response_time_ms": 5, "panel_type": "ips", "aspect_ratio": "16_9", "adaptive_sync": "compatible", "hdr_supported": false},
+      "offers": {"demo-novacore-systems": [28900, 14], "demo-bytecraft-technologies": [29500, 9]}
+    },
+    {
+      "brand": "HexView", "brand_slug": "hexview-demo", "name": "HexView Arena 27 QHD Monitor", "model": "Arena-27-QHD165-Demo", "sku": "HV27Q",
+      "specs": {"accessory_type": "monitor", "connectivity": ["wired"], "screen_size_inches": 27, "resolution_width_pixels": 2560, "resolution_height_pixels": 1440, "refresh_rate_hz": 165, "response_time_ms": 1, "panel_type": "ips", "aspect_ratio": "16_9", "adaptive_sync": "multiple", "hdr_supported": true},
+      "offers": {"demo-novacore-systems": [52900, 8], "demo-bytecraft-technologies": [51500, 6]}
+    },
+    {
+      "brand": "HexView", "brand_slug": "hexview-demo", "name": "HexView Canvas 27 4K Monitor", "model": "Canvas-27-4K-Demo", "sku": "HV274K",
+      "specs": {"accessory_type": "monitor", "connectivity": ["wired"], "screen_size_inches": 27, "resolution_width_pixels": 3840, "resolution_height_pixels": 2160, "refresh_rate_hz": 60, "response_time_ms": 5, "panel_type": "ips", "aspect_ratio": "16_9", "adaptive_sync": "compatible", "hdr_supported": true},
+      "offers": {"demo-bytecraft-technologies": [74900, 4]}
+    },
+    {
+      "brand": "KeyForge", "brand_slug": "keyforge-demo", "name": "KeyForge Office Full Keyboard", "model": "Office-Full-Demo", "sku": "KFOFF",
+      "specs": {"accessory_type": "keyboard", "connectivity": ["wired"], "keyboard_size": "full_size", "switch_technology": "membrane", "backlight_type": "none", "has_numpad": true, "hot_swappable": false},
+      "offers": {"demo-novacore-systems": [2800, 25], "demo-bytecraft-technologies": [2500, 31]}
+    },
+    {
+      "brand": "KeyForge", "brand_slug": "keyforge-demo", "name": "KeyForge TKL Mechanical Keyboard", "model": "TKL-RGB-Demo", "sku": "KFTKL",
+      "specs": {"accessory_type": "keyboard", "connectivity": ["wired"], "keyboard_size": "tenkeyless", "switch_technology": "mechanical", "switch_model": "Tactile demo switch", "backlight_type": "rgb", "has_numpad": false, "hot_swappable": true},
+      "offers": {"demo-novacore-systems": [7900, 12], "demo-bytecraft-technologies": [7500, 10]}
+    },
+    {
+      "brand": "KeyForge", "brand_slug": "keyforge-demo", "name": "KeyForge Flex Wireless Keyboard", "model": "Flex-75-Wireless-Demo", "sku": "KFF75",
+      "specs": {"accessory_type": "keyboard", "connectivity": ["wireless", "bluetooth"], "keyboard_size": "compact_75", "switch_technology": "scissor", "backlight_type": "single_colour", "has_numpad": false, "hot_swappable": false},
+      "offers": {"demo-bytecraft-technologies": [9900, 8]}
+    },
+    {
+      "brand": "PointArc", "brand_slug": "pointarc-demo", "name": "PointArc Everyday Mouse", "model": "Everyday-Wireless-Demo", "sku": "PAEVD",
+      "specs": {"accessory_type": "mouse", "connectivity": ["wireless"], "tracking_method": "optical", "max_dpi": 1600, "hand_orientation": "ambidextrous", "weight_grams": 92, "programmable_buttons": 0},
+      "offers": {"demo-novacore-systems": [1900, 30], "demo-bytecraft-technologies": [1750, 22]}
+    },
+    {
+      "brand": "PointArc", "brand_slug": "pointarc-demo", "name": "PointArc Pulse Gaming Mouse", "model": "Pulse-16000-Demo", "sku": "PAP16",
+      "specs": {"accessory_type": "mouse", "connectivity": ["wired"], "tracking_method": "optical", "max_dpi": 16000, "hand_orientation": "right", "weight_grams": 78, "programmable_buttons": 6},
+      "offers": {"demo-novacore-systems": [5200, 18], "demo-bytecraft-technologies": [4900, 16]}
+    },
+    {
+      "brand": "PointArc", "brand_slug": "pointarc-demo", "name": "PointArc Work Pro Mouse", "model": "Work-Pro-Bluetooth-Demo", "sku": "PAWRK",
+      "specs": {"accessory_type": "mouse", "connectivity": ["wireless", "bluetooth"], "tracking_method": "laser", "max_dpi": 4000, "hand_orientation": "right", "weight_grams": 105, "programmable_buttons": 5},
+      "offers": {"demo-bytecraft-technologies": [6500, 7]}
+    },
+    {
+      "brand": "SonicDock", "brand_slug": "sonicdock-demo", "name": "SonicDock Communicate Headset", "model": "Communicate-USB-Demo", "sku": "SDCOM",
+      "specs": {"accessory_type": "headset", "connectivity": ["wired"], "headset_style": "on_ear", "has_microphone": true, "wireless_capable": false, "enclosure_type": "closed", "frequency_min_hz": 20, "frequency_max_hz": 20000, "surround_sound": false},
+      "offers": {"demo-novacore-systems": [4800, 13], "demo-bytecraft-technologies": [4500, 17]}
+    },
+    {
+      "brand": "SonicDock", "brand_slug": "sonicdock-demo", "name": "SonicDock Arena Wireless Headset", "model": "Arena-Wireless-Demo", "sku": "SDARENA",
+      "specs": {"accessory_type": "headset", "connectivity": ["wireless"], "headset_style": "over_ear", "has_microphone": true, "wireless_capable": true, "enclosure_type": "closed", "frequency_min_hz": 20, "frequency_max_hz": 20000, "surround_sound": true},
+      "offers": {"demo-novacore-systems": [12900, 9], "demo-bytecraft-technologies": [11900, 6]}
+    }
+  ]
+}

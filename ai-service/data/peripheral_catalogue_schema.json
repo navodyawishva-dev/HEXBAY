@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "category_model": "One canonical Accessories product with an accessory_type discriminator; seller offers remain separate listings.",
+  "common_fields": {
+    "brand": {"type": "text", "required": true},
+    "model": {"type": "text", "required": true},
+    "manufacturer_part_number": {"type": "text", "required": false},
+    "connectivity": {
+      "type": "multi_option",
+      "required": false,
+      "values": ["wired", "wireless", "bluetooth"]
+    },
+    "colour": {"type": "text", "required": false}
+  },
+  "candidate_use_profiles": {
+    "monitor": ["general", "productivity", "visual_creative", "gaming", "competitive_gaming"],
+    "keyboard": ["productivity", "portable", "ergonomic", "gaming"],
+    "mouse": ["productivity", "portable", "accessibility", "gaming"],
+    "headset": ["communication", "music_creation", "portable", "gaming"]
+  },
+  "categories": {
+    "monitor": {
+      "default_setup_item": true,
+      "required_for_verification": [
+        "screen_size_inches",
+        "resolution_width_pixels",
+        "resolution_height_pixels",
+        "refresh_rate_hz",
+        "panel_type"
+      ],
+      "fields": {
+        "screen_size_inches": {"type": "decimal", "unit": "inches", "minimum": 10, "maximum": 100},
+        "resolution_width_pixels": {"type": "integer", "unit": "pixels", "minimum": 640, "maximum": 16384},
+        "resolution_height_pixels": {"type": "integer", "unit": "pixels", "minimum": 480, "maximum": 8640},
+        "refresh_rate_hz": {"type": "decimal", "unit": "Hz", "minimum": 24, "maximum": 1000},
+        "response_time_ms": {"type": "decimal", "unit": "ms", "minimum": 0.01, "maximum": 100},
+        "panel_type": {"type": "option", "values": ["ips", "va", "tn", "oled", "qd_oled", "mini_led", "other"]},
+        "aspect_ratio": {"type": "option", "values": ["16_9", "16_10", "21_9", "32_9", "other"]},
+        "adaptive_sync": {"type": "option", "values": ["freesync", "gsync", "compatible", "multiple", "none"]},
+        "hdr_supported": {"type": "boolean"}
+      }
+    },
+    "keyboard": {
+      "default_setup_item": true,
+      "required_for_verification": ["keyboard_size", "connectivity"],
+      "fields": {
+        "keyboard_size": {"type": "option", "values": ["full_size", "compact_96", "tenkeyless", "compact_75", "compact_65", "compact_60", "compact", "ergonomic", "other"]},
+        "switch_technology": {"type": "option", "values": ["mechanical", "membrane", "optical", "scissor", "hall_effect", "hybrid", "other"]},
+        "switch_model": {"type": "text"},
+        "backlight_type": {"type": "option", "values": ["none", "single_colour", "multicolour", "rgb"]},
+        "has_numpad": {"type": "boolean"},
+        "hot_swappable": {"type": "boolean"}
+      }
+    },
+    "mouse": {
+      "default_setup_item": true,
+      "required_for_verification": ["tracking_method", "connectivity", "max_dpi", "hand_orientation"],
+      "fields": {
+        "tracking_method": {"type": "option", "values": ["optical", "laser", "trackball", "other"]},
+        "max_dpi": {"type": "integer", "unit": "DPI", "minimum": 100, "maximum": 100000},
+        "hand_orientation": {"type": "option", "values": ["right", "left", "ambidextrous", "other"]},
+        "weight_grams": {"type": "decimal", "unit": "g", "minimum": 20, "maximum": 500},
+        "programmable_buttons": {"type": "integer", "unit": "buttons", "minimum": 0, "maximum": 40}
+      }
+    },
+    "headset": {
+      "default_setup_item": false,
+      "required_for_verification": ["headset_style", "has_microphone", "wireless_capable", "enclosure_type"],
+      "fields": {
+        "headset_style": {"type": "option", "values": ["over_ear", "on_ear", "in_ear", "other"]},
+        "has_microphone": {"type": "boolean"},
+        "wireless_capable": {"type": "boolean"},
+        "enclosure_type": {"type": "option", "values": ["closed", "open", "semi_open", "other"]},
+        "frequency_min_hz": {"type": "integer", "unit": "Hz", "minimum": 1, "maximum": 1000},
+        "frequency_max_hz": {"type": "integer", "unit": "Hz", "minimum": 1000, "maximum": 200000},
+        "surround_sound": {"type": "boolean"}
+      }
+    }
+  },
+  "eligibility_rule": "Normalization never verifies a product. Recommendation eligibility requires a trusted identity/spec source, all category-required fields, manual or approved-feed verification, and at least one active in-stock HEXBAY listing."
+}
